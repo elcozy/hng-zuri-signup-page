@@ -10,200 +10,78 @@
     <script src="./js/intlTelInput.min.js"></script>
 </head>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@600&display=swap');
 
-    html {
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/background.png) no-repeat;
-        /* background-blend-mode: darken; */
-        /* mix-blend-mode: normal; */
-        /* opacity: 0.4; */
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-    }
-
-    body {
-        /* background: #000000; */
-        /* mix-blend-mode: color-burn; */
-        font-family: 'Montserrat', sans-serif;
-
-        min-height: 100vh;
-        height: 100%;
-        width: 100%;
-        margin: 0;
-
-    }
-
-    .logo {
-        width: 94px;
-        height: 48px;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 40px;
-        line-height: 48px;
-        margin-top: 48px;
-        padding-left: 75px;
-        color: #FFFFFF;
-        font-family: 'Inter', sans-serif;
-    }
-
-    .content {
-        /* width: 985px; */
-        /* height: 796px; */
-    }
-
-    .formFill input:not(:last-child),
-    input#phone {
-        width: 480px;
-        height: 64px;
-        background: rgba(255, 255, 255, 0.25);
-        border-radius: 5px;
-        margin: 0 0 25px 25px !important;
-        border-color: transparent;
-    }
-
-    ::placeholder {
-        font-family: 'Montserrat', sans-serif;
-        color: white;
-        font-size: 20px;
-        line-height: 24px;
-        padding: 20px 24px;
-    }
-
-    .iti__selected-dial-code {
-        font-family: 'Montserrat', sans-serif;
-        color: white;
-        font-size: 20px;
-        line-height: 24px;
-        padding: 20px 2px;
-    }
-
-    .iti__selected-flag {
-        margin-left: 25px;
-    }
-
-    .formFill input:not(:last-child) {
-        /* text-align: center; */
-    }
-
-    .create_account {
-        text-align: center;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 35px;
-        color: white;
-        margin-bottom: 59px;
-    }
-
-    .signup_button,
-    .signup_google {
-        width: 1000px;
-        height: 64px;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 22px;
-        margin-left: 25px;
-
-        color: #FFFFFF;
-        background: #FF5E5E;
-        border-radius: 5px;
-        border-color: transparent;
-        cursor: pointer;
-    }
-
-    .signup_google {
-        background: #4C8BF5;
-    }
-
-    .signup_google a {
-        text-decoration: none;
-        color: #FFFFFF;
-    }
-
-
-    ul#iti-0__country-listbox {
-        background: rgb(255, 255, 255);
-        border-radius: 5px;
-        margin-left: 25px;
-    }
-
-    .iti__selected-flag {
-        padding-left: 15px !important;
-    }
-
-    input[type="checkbox"] {
-        height: 35px;
-        width: 35px;
-        /* outline: 2px solid red; */
-        /* outline-offset: -2px; */
-    }
-
-    .newsL {
-        display: flex;
-        font-family: 'Montserrat', sans-serif;
-        height: 35px;
-        font-size: 20px;
-        font-style: normal;
-        color: #FFFFFF;
-        margin-bottom: 40px;
-        margin-left: 25px;
-    }
-
-    .newsL p {
-        margin: 0;
-        align-self: center;
-        padding-left: 32px;
-    }
-
-    .have_account {
-        font-size: 20px;
-        color: #FFFFFF;
-    }
-
-    .have_account a {
-        color: #FF5E5E;
-        text-decoration: none;
-    }
-
-    #pass {
-        /* background-color: #ffffff40; */
-        background: #ffffff40, url(/img/group.png) no-repeat;
-    }
 </style>
 
 <body>
-    <div class="logo">ZURI</div>
 
+    <div class="headerM">
+        <div class="headerMm">
+            <div class="logo">ZURI</div>
+            <div class="linksMm">
+                <div class="linksM">
+                    <a href="!#">HOME</a>
+                    <a href="!#">SHOP</a>
+                    <a href="!#">PRODUCTS</a>
+                    <a href="!#">ABOUT US</a>
+                </div>
+                <div class="icnsM">
+                    <img src="./img/search.png" alt="search">
+                    <img src="./img/profile.png" alt="profile">
+                    <img src="./img/cart.png" alt="basket">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
     <div class="content">
-        <div>
-            <div class="create_account">Create Account</div>
-            <form action="" class="formFill" method="get" name="enquiry">
-                <!-- <label for="fname">First Name:</label> -->
-                <input type="text" placeholder="First Name" id="fname">
+        <div class="create_account">Create Account</div>
+        <div class="fillBody">
+            <div>
 
-                <!-- <label for="lname">Last Name:</label> -->
-                <input type="text" placeholder="Last Name" id="lname">
-                <br>
-                <!-- <label for="uemail">Email</label> -->
-                <input type="text" placeholder="E-Mail" id="uemail" name="usermail">
-                <!-- <label for="pass">Password</label> -->
-                <input type="password" placeholder="Password" id="pass">
-                <br>
-                <!-- <label for="city">Phone Number</label> -->
-                <input type="tel" placeholder="Phone Number" id="phone"><br>
-                <!-- <input type="phonenumber" placeholder="Phone Number" id="phoneNumber">  -->
+                <form action="" class="formFill" method="get" name="enquiry">
+                    <!-- <label for="fname">First Name:</label> -->
+                    <input type="text" placeholder="First Name" id="fname">
+
+                    <!-- <label for="lname">Last Name:</label> -->
+                    <input type="text" placeholder="Last Name" id="lname">
+                    <br>
+                    <!-- <label for="uemail">Email</label> -->
+                    <input type="text" placeholder="E-Mail" id="uemail" name="usermail">
+                    <!-- <label for="pass">Password</label> -->
+                    <input type="password" placeholder="Password" id="pass">
+                    <br>
+                    <!-- <label for="city">Phone Number</label> -->
+                    <input type="tel" placeholder="Phone Number" id="phone"><br>
+                    <!-- <input type="phonenumber" placeholder="Phone Number" id="phoneNumber">  -->
+
+            </div>
+            <div class="newsL"> <input type="checkbox" checked><span class="checkmark"></span>
+                <p> I want to receive Zuri Newsletters with best deals
+                    and offers</p>
+            </div>
+            </form>
+
+            <button class="signup_button">Sign Up</button>
+            <div class="hrOr">
+                <hr>
+                <p>OR</p>
+                <hr>
+            </div>
+            <br>
+            <button class="signup_google"><img class="google_png" src="./img/google.png" alt="google logo">
+                <a href="!#">
+                    Sign Up with
+                    Google</a></button>
 
         </div>
-        <div class="newsL"> <input type="checkbox" checked><span class="checkmark"></span>
-            <p> I want to receive Zuri Newsletters with best deals
-                and offers</p>
-        </div>
-        </form>
-        <button class="signup_button">Sign Up</button>
-        <hr>OR <br>
-        <button class="signup_google"><a href="!#"> Sign Up with Google</a></button>
-
         <div class="have_account">
             <p>Already have an account? <a href="!#">Login</a> </p>
         </div>
+        <footer>
+            INSERT FOOTER HERE
+        </footer>
     </div>
     <script>
         var input = document.querySelector("#phone");
