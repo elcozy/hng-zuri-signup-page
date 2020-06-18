@@ -33,7 +33,11 @@ input#phone {
   line-height: 24px;
   padding: 20px 24px;
 }
-
+input {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 20px;
+}
 .iti__selected-dial-code {
   font-family: "Montserrat", sans-serif;
   color: white;
